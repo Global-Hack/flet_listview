@@ -1,10 +1,15 @@
 from time import sleep
 import flet as ft
 
+import webbrowser
+
 def main(page: ft.Page):
     page.title = "Auto-scrolling ListView"
 
     lv = ft.ListView(expand=1, spacing=10, padding=20, auto_scroll=False)
+
+    res = webbrowser.get()
+    print(res)
 
     count = 1
 
